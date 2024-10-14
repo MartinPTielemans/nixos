@@ -10,5 +10,6 @@
     ryujinx
     heroic
     bottles
+    wine
   ];
 }
