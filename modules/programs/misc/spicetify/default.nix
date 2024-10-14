@@ -33,10 +33,10 @@
           adblock
           shuffle # shuffle+ (special characters are sanitized out of ext names)
           fullAppDisplay
-            hidePodcasts
-            betterGenres
-            lastfm
-            fullScreen
+          hidePodcasts
+          betterGenres
+          lastfm
+          fullScreen
         ];
       };
     })

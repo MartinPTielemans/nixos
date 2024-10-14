@@ -66,8 +66,8 @@
         enable = true;
         xwayland.enable = true;
         plugins = [
-          # inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-          # inputs.hyprland-plugins.packages.${pkgs.system}.hyprwinwrap
+           inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+          #inputs.hyprland-plugins.packages.${pkgs.system}.hyprwinwrap
         ];
         systemd = {
           enable = true;
@@ -103,9 +103,9 @@
             "NIXPKGS_ALLOW_UNFREE,1"
           ];
           exec-once = [
-            #"[workspace 1 silent] firefox"
-            #"[workspace 2 silent] alacritty"
-            #"[workspace 5 silent] spotify"
+            "[workspace 1 silent] firefox"
+            "[workspace 2 silent] alacritty"
+            "[workspace 9 silent] spotify"
             #"[workspace special silent] firefox --new-instance -P private"
             #"[workspace special silent] alacritty"
             #"[workspace 8 silent] alacritty -e cava"
@@ -237,8 +237,6 @@
           windowrulev2 = [
             #"noanim, class:^(Rofi)$
             "tile,title:(.*)(Godot)(.*)$"
-            "workspace 2, class:^(firefox)$"
-            "workspace 1, class:^(Alacritty)$"
             "workspace 1, class:^(kitty)$"
             "workspace 3, class:^(VSCodium)$"
             "workspace 3, class:^(codium-url-handler)$"
@@ -333,7 +331,7 @@
               "$mainMod, F10, exec, pkill wlsunset"
 
               # Overview plugin
-              # "$mainMod, tab, overview:toggle"
+              "$mainMod, tab, overview:toggle"
 
               # Window/Session actions
               "$mainMod, Q, exec, $hyprScriptsDir/dontkillsteam.sh" # killactive, kill the window on focus

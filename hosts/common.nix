@@ -19,7 +19,7 @@ in {
     ../modules/programs/shell/zsh
     ../modules/programs/browser/firefox
     ../modules/programs/editor/nixvim
-    #../modules/programs/editor/vscode
+    ../modules/programs/editor/vscode
     ../modules/programs/cli/starship
     ../modules/programs/cli/tmux
     ../modules/programs/cli/direnv
@@ -30,6 +30,7 @@ in {
     ../modules/programs/misc/mpv
     ../modules/programs/misc/spicetify
     ../modules/programs/misc/obs
+    ../modules/programs/misc/discord      
   ];
 
   # Common home-manager options that are shared between all systems.
@@ -38,8 +39,9 @@ in {
     home.username = username;
     home.homeDirectory = "/home/${username}";
 
-    home.stateVersion = "23.11"; # Please read the comment before changing.
 
+    home.stateVersion = "23.11"; # Please read the comment before changing.
+    nixpkgs.config.allowUnfree = true;
     # Packages that don't require configuration. If you're looking to configure a program see the /modules dir
     home.packages = with pkgs; [
       # Applications
@@ -59,6 +61,7 @@ in {
       ripgrep
       tldr
       unzip
+      zoxide
       (pkgs.writeShellScriptBin "hello" ''
         echo "Hello ${username}!"
       '')
