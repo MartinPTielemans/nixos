@@ -138,6 +138,9 @@
             sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
             force_no_accel = true;
           };
+          cursor = {
+            no_hardware_cursors = true;
+        };
           general = {
             gaps_in = 4;
             gaps_out = 9;
@@ -486,6 +489,9 @@
 
           # Easily plug in any monitor
           monitor=,preferred,auto,2
+
+          monitor = DP-2, 1920x1080@239.76, -1920x0, 1
+          monitor = DP-3, 2560x1440@240.00, 0x0, 1
 
         '';
       };
