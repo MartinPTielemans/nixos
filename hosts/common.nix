@@ -20,6 +20,7 @@ in {
     ../modules/programs/browser/firefox
     ../modules/programs/editor/nixvim
     ../modules/programs/editor/vscode
+    ../modules/programs/editor/jetbrains
     ../modules/programs/cli/starship
     ../modules/programs/cli/tmux
     ../modules/programs/cli/direnv
