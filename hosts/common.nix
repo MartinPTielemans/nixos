@@ -32,7 +32,7 @@ in {
     ../modules/programs/misc/obs
     ../modules/programs/misc/discord      
   ];
-
+  home-manager.backupFileExtension = "backup";
   # Common home-manager options that are shared between all systems.
   home-manager.users.${username} = {pkgs, ...}: {
     xdg.enable = true;

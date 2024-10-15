@@ -18,6 +18,7 @@
           yzhang.markdown-all-in-one
           catppuccin.catppuccin-vsc
           catppuccin.catppuccin-vsc-icons
+          supermaven.supermaven
           # asvetliakov.vscode-neovim
           vscodevim.vim
           tamasfe.even-better-toml
