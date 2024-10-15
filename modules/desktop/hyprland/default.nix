@@ -323,6 +323,9 @@
             "$mainMod SHIFT, h, resizeactive, -30 0"
             "$mainMod SHIFT, k, resizeactive, 0 -30"
             "$mainMod SHIFT, j, resizeactive, 0 30"
+
+            ",XF86AudioLowerVolume,exec,pamixer -d 2"
+            ",XF86AudioRaiseVolume,exec,pamixer -i 2"
           ];
           bind =
             [
@@ -381,8 +384,6 @@
               ",XF86MonBrightnessUp, exec, brightnessctl -d amdgpu_bl2 set 5%+"
               ",XF86MonBrightnessDown, exec, brightnessctl -d amdgpu_bl2 set 5%-"
               ",XF86AudioMute,exec,pamixer -t"
-              ",XF86AudioLowerVolume,exec,pamixer -d 2"
-              ",XF86AudioRaiseVolume,exec,pamixer -i 2"
               ",XF86AudioPlay,exec,playerctl play-pause"
               ",XF86AudioPause,exec,playerctl play-pause"
               ",xf86AudioNext,exec,playerctl next"
