@@ -28,10 +28,12 @@ in {
     ../modules/programs/cli/lazygit
     ../modules/programs/cli/cava
     ../modules/programs/cli/btop
+    ../modules/programs/cli/nodePackages
     ../modules/programs/misc/mpv
     ../modules/programs/misc/spicetify
     ../modules/programs/misc/obs
     ../modules/programs/misc/discord      
+    ../modules/programs/misc/libreOffice
   ];
   home-manager.backupFileExtension = "backup";
   # Common home-manager options that are shared between all systems.
@@ -48,6 +50,7 @@ in {
       # Applications
       #kate
       xfce.thunar
+      chromium
 
       # Terminal
       eza
