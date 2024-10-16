@@ -105,6 +105,7 @@
           exec-once = [
             "[workspace 1 silent] firefox"
             "[workspace 2 silent] alacritty"
+            "[workspace 4 silent] discord"
             "[workspace 9 silent] spotify"
             #"[workspace special silent] firefox --new-instance -P private"
             #"[workspace special silent] alacritty"
