@@ -81,6 +81,8 @@ in {
       (pkgs.writeShellScriptBin "hello" ''
         echo "Hello ${username}!"
       '')
+      asusctl
+      supergfxctl
     ];
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
