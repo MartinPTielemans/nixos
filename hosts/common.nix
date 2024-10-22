@@ -34,6 +34,7 @@ in {
     ../modules/programs/misc/obs
     ../modules/programs/misc/discord      
     ../modules/programs/misc/libreOffice
+    ../modules/programs/misc/onePassword
   ];
   home-manager.backupFileExtension = "backup";
   # Common home-manager options that are shared between all systems.
@@ -41,7 +42,18 @@ in {
     xdg.enable = true;
     home.username = username;
     home.homeDirectory = "/home/${username}";
-
+    
+    xdg.mimeApps = {
+      enable = true;
+    
+      defaultApplications = {
+        "text/html" = "firefox.desktop";
+        "x-scheme-handler/http" = "firefox.desktop";
+        "x-scheme-handler/https" = "firefox.desktop";
+        "x-scheme-handler/about" = "firefox.desktop";
+        "x-scheme-handler/unknown" = "firefox.desktop";
+      };
+    };
 
     home.stateVersion = "23.11"; # Please read the comment before changing.
     nixpkgs.config.allowUnfree = true;
@@ -50,7 +62,6 @@ in {
       # Applications
       #kate
       xfce.thunar
-      chromium
 
       # Terminal
       eza
@@ -66,6 +77,7 @@ in {
       tldr
       unzip
       zoxide
+      xclip
       (pkgs.writeShellScriptBin "hello" ''
         echo "Hello ${username}!"
       '')

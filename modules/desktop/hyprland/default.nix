@@ -141,6 +141,7 @@
           };
           cursor = {
             no_hardware_cursors = true;
+            inactive_timeout = 1;
         };
           general = {
             gaps_in = 4;
@@ -246,6 +247,7 @@
             "workspace 4, class:^(krita)$"
             "workspace 4, title:(.*)(Godot)(.*)$"
             "workspace 4, title:(GNU Image Manipulation Program)(.*)$"
+            "workspace 4, class:^(discord)$"
             "workspace 9, class:^(Spotify)$"
             "workspace 9, title:(.*)(Spotify)(.*)$"
             "workspace 5, class:^(steam)$"
@@ -374,7 +376,7 @@
               "$mainMod ALT, B, exec, $hyprScriptsDir/WaybarLayout.sh" # Waybar Layout Menu
 
               # Screenshot/Screencapture
-              "$mainMod, P, exec, $hyprScriptsDir/screenshot.sh s" # drag to snip an area / click on a window to print it
+              "$mainMod SHIFT, S, exec, $hyprScriptsDir/screenshot.sh s" # drag to snip an area / click on a window to print it
               "$mainMod CTRL, P, exec, $hyprScriptsDir/screenshot.sh sf" # frozen screen, drag to snip an area / click on a window to print it
               "$mainMod, print, exec, $hyprScriptsDir/screenshot.sh m" # print focused monitor
               "$mainMod ALT, P, exec, $hyprScriptsDir/screenshot.sh p" # print all monitor outputs
@@ -397,18 +399,9 @@
               # "SUPER,Tab,bringactivetotop,
 
               # Switch workspaces with mainMod + [0-9]
-              /*
-                 "$mainMod, 1, workspace, 1"
-              "$mainMod, 2, workspace, 2"
-              "$mainMod, 3, workspace, 3"
-              "$mainMod, 4, workspace, 4"
-              "$mainMod, 5, workspace, 5"
-              "$mainMod, 6, workspace, 6"
-              "$mainMod, 7, workspace, 7"
-              "$mainMod, 8, workspace, 8"
-              "$mainMod, 9, workspace, 9"
+              
               "$mainMod, 0, workspace, 10"
-              */
+              
 
               # Switch workspaces relative to the active workspace with mainMod + CTRL + [←→]
               "$mainMod CTRL, right, workspace, r+1"

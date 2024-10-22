@@ -34,6 +34,7 @@
           # pkief.material-icon-theme
           # equinusocio.vsc-material-theme
           # dracula-theme.theme-dracula
+          yoavbls.pretty-ts-errors
         ];
         keybindings = [
           {
