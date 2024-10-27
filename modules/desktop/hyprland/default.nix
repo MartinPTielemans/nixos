@@ -384,6 +384,10 @@
               # Functional keybinds
               ",xf86Sleep, exec, systemctl suspend"
               ",XF86AudioMicMute,exec,pamixer --default-source -t"
+              # brightness control for bl1
+              ",XF86MonBrightnessUp, exec, brightnessctl -d amdgpu_bl1 set 5%+"
+              ",XF86MonBrightnessDown, exec, brightnessctl -d amdgpu_bl1 set 5%-"
+              # brightness control for bl2
               ",XF86MonBrightnessUp, exec, brightnessctl -d amdgpu_bl2 set 5%+"
               ",XF86MonBrightnessDown, exec, brightnessctl -d amdgpu_bl2 set 5%-"
               ",XF86AudioMute,exec,pamixer -t"

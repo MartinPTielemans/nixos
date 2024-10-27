@@ -36,7 +36,7 @@ in {
     ../modules/programs/misc/libreOffice
     ../modules/programs/misc/onePassword
   ];
-  home-manager.backupFileExtension = "backup";
+  home-manager.backupFileExtension = "backup-" + pkgs.lib.readFile "${pkgs.runCommand "timestamp" {} "echo -n `date '+%Y%m%d%H%M%S'` > $out"}";
   # Common home-manager options that are shared between all systems.
   home-manager.users.${username} = {pkgs, ...}: {
     xdg.enable = true;
