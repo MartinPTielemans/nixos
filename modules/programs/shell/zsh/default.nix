@@ -231,7 +231,6 @@
           tp = "${pkgs.trash-cli}/bin/trash-put";
           tpr = "${pkgs.trash-cli}/bin/trash-restore";
           grep = "grep --color=always";
-          cd = "z";
 
           # Nixos
           list-gens = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system/";

@@ -35,6 +35,14 @@ in {
       powerManagement.enable = false; # This can cause sleep/suspend to fail and saves entire VRAM to /tmp/
       modesetting.enable = true;
       package = nvidiaDriverChannel;
+      prime = {
+        offload = {
+          enable = true;
+          enableOffloadCmd = true;
+        };
+        amdgpuBusId = "PCI:65:0:0";
+        nvidiaBusId = "PCI:1:0:0";
+      };
     };
     graphics = {
       enable = true;

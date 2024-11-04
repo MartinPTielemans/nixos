@@ -422,49 +422,49 @@ in {
                     {
                       name = "Github";
                       url = "https://github.com/";
-                    }
-                    {
-                      name = "NixOS pkgs";
-                      url = "https://search.nixos.org/packages";
-                    }
-                    {
-                      name = "NixOS Wiki";
-                      url = "https://nixos.wiki";
-                    }
-                    {
-                      name = "NixOS Configs";
-                      url = "https://nixos.wiki/wiki/Configuration_Collection";
-                    }
-                    {
-                      name = "Search Engines";
-                      bookmarks = [
-                        {
-                          name = "Startpage";
-                          url = "https://www.startpage.com/do/mypage.pl?prfe=358f0310b1c47c53e468bbed228d921438352de61d9ea4fcad92c335685a8e4de5118de1f91f06960587d38d76310c444d27766f935be9bb7dfa8fbc7f0b8207fbcd0a23600e2f957b79e6b3";
-                        }
-                        {
-                          name = "SearX";
-                          url = "https://searx.aicampground.com";
-                        }
-                      ];
-                    }
+                      }
+                    # {
+                    #  name = "NixOS pkgs";
+                    #  url = "https://search.nixos.org/packages";
+                    # }
+                    # {
+                    #  name = "NixOS Wiki";
+                    #  url = "https://nixos.wiki";
+                    # }
+                    # {
+                    #  name = "NixOS Configs";
+                    #  url = "https://nixos.wiki/wiki/Configuration_Collection";
+                    # }
+                    # {
+                    #  name = "Search Engines";
+                    #  bookmarks = [
+                    #    {
+                    #      name = "Startpage";
+                    #      url = "https://www.startpage.com/do/mypage.pl?prfe=358f0310b1c47c53e468bbed228d921438352de61d9ea4fcad92c335685a8e4de5118de1f91f06960587d38d76310c444d27766f935be9bb7dfa8fbc7f0b8207fbcd0a23600e2f957b79e6b3";
+                    #    }
+                    #    {
+                    #      name = "SearX";
+                    #      url = "https://searx.aicampground.com";
+                    #    }
+                    #  ];
+                    # }
                   ];
                 }
               ];
               search = {
                 force = true;
-                default = "Google";
+                default = "DuckDuckGo";
                 privateDefault = "Startpage";
-                order = [
-                  "Startpage"
-                  "Searx"
-                  "Brave"
-                  "NixOS Packages"
-                  "NixOS Options"
-                  "NixOS Wiki"
-                  "Home Manager Options"
-                  "Google"
-                ];
+                #order = [
+                # "Startpage"
+                # "Searx"
+                # "Brave"
+                # "NixOS Packages"
+                # "NixOS Options"
+                # "NixOS Wiki"
+                # "Home Manager Options"
+                # "Google"
+                #];
                 engines = {
                   "Startpage" = {
                     urls = [

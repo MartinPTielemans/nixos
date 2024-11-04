@@ -31,6 +31,7 @@
     };
   };
 
+
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot  = true;
   services.blueman.enable = true;
@@ -72,6 +73,17 @@
       variant = "";
     };
   };
+  services.auto-cpufreq.enable = true;
+  services.auto-cpufreq.settings = {
+    battery = {
+    governor = "powersave";
+    turbo = "never";
+    };
+    charger = {
+      governor = "performance";
+      turbo = "auto";
+    };
+};
   console.keyMap = "dk"; # Configure console keymap
   services.printing.enable = true; # Enable CUPS to print documents.
 
