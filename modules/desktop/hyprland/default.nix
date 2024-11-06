@@ -77,9 +77,9 @@
           "$scriptsDir" = "XDG_BIN_HOME";
           "$hyprScriptsDir" = "$XDG_CONFIG_HOME/hypr/scripts";
           "$mainMod" = "SUPER";
-          # "$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-4/style-7.rasi";
-          # "$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-4/style-3.rasi";
-          "$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-2/style-2.rasi";
+          "$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-4/style-7.rasi";
+          #"$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-3/style-1.rasi";
+          #"$launcher" = "pkill rofi || rofi -show drun -modi drun,filebrowser,run,window -theme $XDG_CONFIG_HOME/rofi/launchers/type-2/style-2.rasi";
           "$term" = "${pkgs.${terminal}}/bin/${terminal}";
           "$editor" = "code --disable-gpu";
           "$file" = "$term -e lf";
@@ -103,7 +103,7 @@
             "NIXPKGS_ALLOW_UNFREE,1"
           ];
           exec-once = [
-            "[workspace 1 silent] firefox"
+            "[workspace 1 silent] $browser"
             "[workspace 2 silent] alacritty"
             "[workspace 4 silent] discord"
             "[workspace 9 silent] spotify"
