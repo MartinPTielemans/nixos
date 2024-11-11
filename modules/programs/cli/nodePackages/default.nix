@@ -6,6 +6,8 @@
       home.packages = with pkgs; [
         nodePackages.dotenv-cli
         bun
+        gcc
+        nodejs
       ];
     })
   ];

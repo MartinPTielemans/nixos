@@ -18,7 +18,8 @@ in {
     ../modules/programs/shell/bash
     ../modules/programs/shell/zsh
     ../modules/programs/browser/firefox
-    ../modules/programs/editor/nixvim
+    #../modules/programs/editor/nixvim
+    ../modules/programs/editor/neovim
     ../modules/programs/editor/vscode
     ../modules/programs/editor/jetbrains
     ../modules/programs/cli/starship
@@ -228,6 +229,8 @@ in {
     libsForQt5.qt5.qtgraphicaleffects # For sddm to function properly
     vulkan-tools
     sddm-themes.astronaut
+    gcc
+    stdenv.cc.cc.lib
     # sddm-themes.sugar-dark
     # sddm-themes.tokyo-night
 
