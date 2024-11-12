@@ -83,7 +83,7 @@
           "$term" = "${pkgs.${terminal}}/bin/${terminal}";
           "$editor" = "code --disable-gpu";
           "$file" = "$term -e lf";
-          "$browser" = "firefox";
+          "$browser" = "zen";
 
           env = [
             "XDG_CURRENT_DESKTOP,Hyprland"
@@ -105,7 +105,7 @@
           exec-once = [
             "[workspace 1 silent] $browser"
             "[workspace 2 silent] alacritty"
-            "[workspace 4 silent] discord"
+            "[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland"
             "[workspace 9 silent] spotify"
             #"[workspace special silent] firefox --new-instance -P private"
             #"[workspace special silent] alacritty"
@@ -403,9 +403,9 @@
               # "SUPER,Tab,bringactivetotop,
 
               # Switch workspaces with mainMod + [0-9]
-              
+
               "$mainMod, 0, workspace, 10"
-              
+
 
               # Switch workspaces relative to the active workspace with mainMod + CTRL + [←→]
               "$mainMod CTRL, right, workspace, r+1"

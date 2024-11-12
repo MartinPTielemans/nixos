@@ -18,8 +18,9 @@ in {
     ../modules/programs/shell/bash
     ../modules/programs/shell/zsh
     ../modules/programs/browser/firefox
-    #../modules/programs/editor/nixvim
-    ../modules/programs/editor/neovim
+    ../modules/programs/editor/nixvim
+    ../modules/programs/browser/zen
+    #../modules/programs/editor/neovim
     ../modules/programs/editor/vscode
     ../modules/programs/editor/jetbrains
     ../modules/programs/cli/starship
@@ -33,7 +34,7 @@ in {
     ../modules/programs/misc/mpv
     ../modules/programs/misc/spicetify
     ../modules/programs/misc/obs
-    ../modules/programs/misc/discord      
+    ../modules/programs/misc/discord
     ../modules/programs/misc/libreOffice
     ../modules/programs/misc/onePassword
   ];
@@ -43,16 +44,16 @@ in {
     xdg.enable = true;
     home.username = username;
     home.homeDirectory = "/home/${username}";
-    
+
     xdg.mimeApps = {
       enable = true;
-    
+
       defaultApplications = {
-        "text/html" = "firefox.desktop";
-        "x-scheme-handler/http" = "firefox.desktop";
-        "x-scheme-handler/https" = "firefox.desktop";
-        "x-scheme-handler/about" = "firefox.desktop";
-        "x-scheme-handler/unknown" = "firefox.desktop";
+        "text/html" = "zen.desktop";
+        "x-scheme-handler/http" = "zen.desktop";
+        "x-scheme-handler/https" = "zen.desktop";
+        "x-scheme-handler/about" = "zen.desktop";
+        "x-scheme-handler/unknown" = "zen.desktop";
       };
     };
 
