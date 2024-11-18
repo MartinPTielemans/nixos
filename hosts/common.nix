@@ -23,6 +23,8 @@ in {
     #../modules/programs/editor/neovim
     ../modules/programs/editor/vscode
     ../modules/programs/editor/jetbrains
+    ../modules/programs/editor/zed
+    ../modules/programs/editor/cursor
     ../modules/programs/cli/starship
     ../modules/programs/cli/tmux
     ../modules/programs/cli/direnv
