@@ -24,11 +24,8 @@
   # Home-manager config
   home-manager.users.${username} = {
     home.packages = with pkgs; [
-      godot_4
-      unityhub
-      gimp
-      gparted
-      krita
+      # Machine specific packages
+
     ];
     home.sessionVariables = {
       EDITOR = "nvim";
@@ -95,25 +92,6 @@
     ];
   };
 
-  virtualisation.vmVariant = {
-    # following configuration is added only when building VM with build-vm
-    virtualisation = {
-      memorySize = 8192; # Use 8GB memory.
-      # memorySize = 4096; # Use 4GB memory.
-      # memorySize = 2048; # Use 2GB memory.
-      cores = 3;
-    };
-  };
-  virtualisation.vmVariantWithBootLoader = {
-    # following configuration is added only when building VM with build-vm
-    virtualisation = {
-      memorySize = 8192; # Use 8GB memory.
-      # memorySize = 4096; # Use 4GB memory.
-      # memorySize = 2048; # Use 2GB memory.
-      cores = 3;
-    };
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -139,5 +117,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }

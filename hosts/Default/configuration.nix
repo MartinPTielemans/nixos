@@ -20,9 +20,7 @@
   # Home-manager config
   home-manager.users.${username} = {
     home.packages = with pkgs; [
-      #vim
-      #krita
-      #steam
+      # Machine specific packags
     ];
     home.sessionVariables = {
       EDITOR = "nvim";
@@ -73,17 +71,6 @@
       variant = "";
     };
   };
-  services.auto-cpufreq.enable = true;
-  services.auto-cpufreq.settings = {
-    battery = {
-    governor = "powersave";
-    turbo = "never";
-    };
-    charger = {
-      governor = "performance";
-      turbo = "auto";
-    };
-};
   console.keyMap = "dk"; # Configure console keymap
   services.printing.enable = true; # Enable CUPS to print documents.
 
@@ -107,5 +94,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }

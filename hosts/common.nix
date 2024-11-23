@@ -39,6 +39,7 @@ in {
     ../modules/programs/misc/discord
     ../modules/programs/misc/libreOffice
     ../modules/programs/misc/onePassword
+    ../modules/programs/misc/obsidian
   ];
   home-manager.backupFileExtension = "backup-" + pkgs.lib.readFile "${pkgs.runCommand "timestamp" {} "echo -n `date '+%Y%m%d%H%M%S'` > $out"}";
   # Common home-manager options that are shared between all systems.
