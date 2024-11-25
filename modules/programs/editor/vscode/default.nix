@@ -9,7 +9,7 @@
       programs.vscode = {
         enable = true;
         # package = pkgs.vscodium;
-        package = pkgs.vscode;
+        package = pkgs.stable.vscode;
         extensions = with pkgs.vscode-extensions; [
           bbenoist.nix
           # arrterian.nix-env-selector
@@ -35,6 +35,9 @@
           # equinusocio.vsc-material-theme
           # dracula-theme.theme-dracula
           yoavbls.pretty-ts-errors
+          github.copilot
+          github.copilot-chat
+          dbaeumer.vscode-eslint
         ];
         keybindings = [
           {
@@ -52,7 +55,7 @@
           # "extensions.autoUpdate" = false; # Fixes vscode freaking out when theres an update
           "window.titleBarStyle" = "custom"; # needed otherwise vscode crashes, see https://github.com/NixOS/nixpkgs/issues/246509
           "window.menuBarVisibility" = "classic";
-          "window.zoomLevel" = 0.5;
+          "window.zoomLevel" = 0.05;
           "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
           "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
           "editor.fontSize" = 14;
