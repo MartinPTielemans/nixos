@@ -89,10 +89,12 @@ in {
       asusctl
       supergfxctl
       gowall
+      openrgb-with-all-plugins
     ];
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
   };
+  services.hardware.openrgb.enable = true;
 
   # Filesystems support
   boot.supportedFilesystems = ["ntfs" "exfat" "ext4" "fat32" "btrfs"];

@@ -996,15 +996,15 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1731411879,
-        "narHash": "sha256-bSvczDRlTAZtjJeGTfglDjopCuvogwGkZlI/pxDiWkU=",
-        "owner": "0xc000022070",
+        "lastModified": 1731318473,
+        "narHash": "sha256-4PqV2qV+1iXNkb56NpkAN/eGw+0eTeYpVwFBUt6T8wU=",
+        "owner": "VCPYC",
         "repo": "zen-browser-flake",
-        "rev": "b4c2f1c5e125f6300205f917e173aeabcb095bdd",
+        "rev": "96d0525ba685252d3384da2a2a4db1dedab4156b",
         "type": "github"
       },
       "original": {
-        "owner": "0xc000022070",
+        "owner": "VCPYC",
         "repo": "zen-browser-flake",
         "type": "github"
       }
