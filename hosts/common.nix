@@ -67,7 +67,6 @@ in {
       # Applications
       #kate
       xfce.thunar
-
       # Terminal
       eza
       fzf
@@ -90,12 +89,12 @@ in {
       supergfxctl
       gowall
       openrgb-with-all-plugins
+keymapp
     ];
     # Let Home Manager install and manage itself.
     programs.home-manager.enable = true;
   };
   services.hardware.openrgb.enable = true;
-
   # Filesystems support
   boot.supportedFilesystems = ["ntfs" "exfat" "ext4" "fat32" "btrfs"];
   services.devmon.enable = true;

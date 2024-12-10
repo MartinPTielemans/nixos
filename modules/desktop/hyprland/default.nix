@@ -101,6 +101,8 @@
             "QT_AUTO_SCREEN_SCALE_FACTOR,1"
             "WLR_RENDERER_ALLOW_SOFTWARE,1"
             "NIXPKGS_ALLOW_UNFREE,1"
+            "LIBVA_DRIVER_NAME,nvidia"
+            "ELECTRON_OZONE_PLATFORM_HINT,auto"
           ];
           exec-once = [
             "[workspace 1 silent] $browser"

@@ -40,7 +40,7 @@
         };
         settings = {
           no_display = true; # Hide hud by default (Show by holding right-shift then press F12)
-          fps_limit = 64;
+          fps_limit = 240;
 
           # keybinds
           toggle_hud = "Shift_R+F12";
