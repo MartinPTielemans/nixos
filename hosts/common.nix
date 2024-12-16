@@ -60,7 +60,7 @@ in {
       };
     };
 
-    home.stateVersion = "23.11"; # Please read the comment before changing.
+    home.stateVersion = "24.11"; # Please read the comment before changing.
     nixpkgs.config.allowUnfree = true;
     # Packages that don't require configuration. If you're looking to configure a program see the /modules dir
     home.packages = with pkgs; [
@@ -104,7 +104,7 @@ keymapp
   # Bootloader.
   boot = {
     tmp.cleanOnBoot = true;
-    kernelPackages = pkgs.linuxKernel.packages.linux_6_10; # _zen_latest, _xanmod_latest _hardened, _rt, _OTHER_CHANNEL, etc.
+    kernelPackages = pkgs.linuxPackages_latest; # _zen_latest, _xanmod_latest _hardened, _rt, _OTHER_CHANNEL, etc.
     loader = {
       efi.canTouchEfiVariables = true;
       efi.efiSysMountPoint = "/boot";
